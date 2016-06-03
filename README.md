@@ -10,7 +10,7 @@ $ ethersim
 Open a new terminal window
 
 ```
-$ cd path/to/truffle-directory
+$ cd path/to/this/directory
 $ truffle compile
 $ truffle deploy
 $ truffle serve
