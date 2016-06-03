@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monument</title>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+
+  <main class="main-container">
+
+    <header class="header">
+      <h1 class="balance">{ blockchain.balance }</h1>
+      <form class="submit" action="index.html" method="post">
+        <input id="title" type="text" name="title" placeholder="Title">
+        <input id="author" type="text" name="author" placeholder="Author">
+        <input id="description" type="text" name="description" placeholder="Description">
+        <input id="bounty" type="number" name="bounty" placeholder="Requested Bounty">
+        <input id="submit-button" type="button" name="submit" value="Submit">
+      </form>
+    </header>
+
+    <ol class="prospects">
+      <li class="entry" rv-each-prospect="model.prospects">
+        <h1>{ prospect.title }<br>by { prospect.author }</h1>
+        <p>{ prospect.description }</p>
+        <form class="" action="index.html" method="post">
+          <input type="radio" name="pending" value="">Pending</input>
+          <input type="radio" name="funded" value="">Funded</input>
+          <input type="radio" name="verification" value="">Verification</input>
+          <input type="radio" name="locked" value="">Locked</input>
+        </form>
+      </li>
+    </ol>
+
+    <ol class="catalogue">
+
+    </ol>
+
+  </main>
+
+</body>
+
+</html>
